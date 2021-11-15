@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="JuegoMultiplicaciones.Views.RondaView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:JuegoMultiplicaciones.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="380" d:DesignWidth="790">
+    <DockPanel Background="MediumPurple">
+
+        <TextBlock Background="LawnGreen" FontWeight="Bold" Foreground="DarkBlue" TextWrapping="Wrap" FontSize="40" TextAlignment="Center"
+                  Padding="10"  DockPanel.Dock="Top">¿Cuál es el resultado de esta 
+        multiplicación?</TextBlock>
+        <TextBlock Foreground="LawnGreen" FontWeight="DemiBold" HorizontalAlignment="Right" Margin="10,10,30,10" 
+                   VerticalAlignment="Bottom" DockPanel.Dock="Bottom"
+                   FontSize="28">Tiempo:
+        <Run Foreground="Yellow">30</Run>
+            <TextBlock Foreground="Yellow"> seg.</TextBlock>
+        </TextBlock>
+
+        <Grid Margin="20" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Border Margin="15,0" BorderBrush="Yellow" BorderThickness="5" CornerRadius="100"
+                    Width="150" Height="150" Background="PaleGreen">
+                <TextBlock VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="80" FontWeight="Bold">5</TextBlock>
+            </Border>
+            <Border Margin="15,0" Grid.Column="2" BorderBrush="DarkBlue" BorderThickness="5" CornerRadius="100"
+                    Width="150" Height="150" Background="DeepPink">
+                <TextBlock VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="80" FontWeight="Bold">5</TextBlock>
+            </Border>
+            <Image Margin="15,0" Grid.Column="1" Source="/Assets/mult.png"></Image>
+        </Grid>
+    </DockPanel>
+</UserControl>

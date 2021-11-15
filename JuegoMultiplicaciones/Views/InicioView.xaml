@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JuegoMultiplicaciones.Views"
         mc:Ignorable="d"
-        Title="InicioView" Height="450" Width="800">
-    <Grid>
-        
+        Title="Juego de multiplicaciones" Height="380" Width="790" Background="Salmon">
+    <Grid >
+        <Image Source="/Assets/fondo.jpg"></Image>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right"
+                   TextWrapping="Wrap" Margin="0,0,170,180"
+                   FontSize="40" FontWeight="Bold">¡Empecemos a </TextBlock>
+        <StackPanel Orientation="Horizontal" Margin="300,0,0,0" Height="100">
+            <TextBlock Foreground="Red" VerticalAlignment="Center" HorizontalAlignment="Right"
+                   TextWrapping="Wrap" Margin="0,0,5,5"
+                   FontSize="50" FontWeight="Bold">M</TextBlock>
+            <TextBlock Foreground="Purple"  VerticalAlignment="Center" HorizontalAlignment="Right"
+                   TextWrapping="Wrap" Margin="0,0,5,5"
+                   FontSize="50" FontWeight="Bold">U</TextBlock>
+            <TextBlock Foreground="Yellow"  VerticalAlignment="Center" HorizontalAlignment="Right"
+                   TextWrapping="Wrap" Margin="0,0,5,5"
+                   FontSize="50" FontWeight="Bold">L</TextBlock>
+            <TextBlock Foreground="Brown"  VerticalAlignment="Center" HorizontalAlignment="Right"
+                   TextWrapping="Wrap" Margin="0,0,5,5"
+                   FontSize="50" FontWeight="Bold">T</TextBlock>
+            <TextBlock Foreground="LawnGreen"  VerticalAlignment="Center" HorizontalAlignment="Right"
+                   TextWrapping="Wrap" Margin="0,0,5,5"
+                   FontSize="50" FontWeight="Bold">I</TextBlock>
+            <TextBlock Foreground="HotPink"  VerticalAlignment="Center" HorizontalAlignment="Right"
+                   TextWrapping="Wrap" Margin="0,0,5,5"
+                   FontSize="50" FontWeight="Bold">P</TextBlock>
+            <TextBlock Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Right"
+                   TextWrapping="Wrap" Margin="0,0,5,5"
+                   FontSize="50" FontWeight="Bold">L</TextBlock>
+            <TextBlock Foreground="Blue"  VerticalAlignment="Center" HorizontalAlignment="Right"
+                   TextWrapping="Wrap" Margin="0,0,5,5"
+                   FontSize="50" FontWeight="Bold">I</TextBlock>
+            <TextBlock Foreground="Orange" VerticalAlignment="Center" HorizontalAlignment="Right"
+                   TextWrapping="Wrap" Margin="0,0,5,5"
+                   FontSize="50" FontWeight="Bold">C</TextBlock>
+            <TextBlock Foreground="DarkMagenta" VerticalAlignment="Center" HorizontalAlignment="Right"
+                   TextWrapping="Wrap" Margin="0,0,5,5"
+                   FontSize="50" FontWeight="Bold">A</TextBlock>
+            <TextBlock Foreground="Salmon" VerticalAlignment="Center" HorizontalAlignment="Right"
+                   TextWrapping="Wrap" Margin="0,0,5,5"
+                   FontSize="50" FontWeight="Bold">R</TextBlock>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right"
+                   TextWrapping="Wrap" Margin="0,0,5,5"
+                   FontSize="50" FontWeight="Bold">!</TextBlock>
+        </StackPanel>
+        <Button Cursor="Hand" BorderBrush="SkyBlue" BorderThickness="3" Background="RosyBrown" Foreground="White" FontWeight="Bold" 
+                FontSize="30" Height="80" Width="300" VerticalAlignment="Bottom" Margin="200,50,0,50">Iniciar ronda</Button>
     </Grid>
 </Window>
